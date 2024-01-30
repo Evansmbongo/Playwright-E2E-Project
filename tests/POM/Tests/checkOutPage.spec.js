@@ -1,8 +1,8 @@
 const {test, expect} = require('@playwright/test')
-import { checkoutPage } from '../Pages/CheckoutPage';
-import { loginPage } from '../Pages/loginPage';
+const { loginPage } = require('../Pages/loginPage'); 
+const { checkoutPage } = require('../Pages/CheckoutPage');
+const { productsPage } = require ('../Pages/productsPage')
 const loginData = JSON.parse(JSON.stringify(require('../Test-Data/loginData.json')))
-import { productsPage } from '../Pages/productsPage'
 const productData = JSON.parse(JSON.stringify(require('../Test-Data/productsPageData.json')))
 const checkOutData = JSON.parse(JSON.stringify(require('../Test-Data/checkOutPageData.json')))
 

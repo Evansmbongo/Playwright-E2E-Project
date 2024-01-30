@@ -1,12 +1,12 @@
 const {test, expect} = require('@playwright/test')
-import { loginPage } from '../Pages/loginPage';
-import { checkoutPage } from '../Pages/CheckoutPage';
+const { loginPage } = require('../Pages/loginPage'); 
+const { checkoutPage } = require('../Pages/CheckoutPage');
+const { productsPage } = require ('../Pages/productsPage')
+const { thankYouPage } = require ('../Pages/thankYouPage')
+const { orderPage } = require ('../Pages/orderPage')
 const checkOutData = JSON.parse(JSON.stringify(require('../Test-Data/checkOutPageData.json')))
 const loginData = JSON.parse(JSON.stringify(require('../Test-Data/loginData.json')))
-import { productsPage } from '../Pages/productsPage'
 const productData = JSON.parse(JSON.stringify(require('../Test-Data/productsPageData.json')))
-import { thankYouPage } from '../Pages/thankYouPage';
-import { orderPage } from '../Pages/orderPage';
 
 test('Orders Page', async({page}) => {
     const LoginPage = new loginPage(page)

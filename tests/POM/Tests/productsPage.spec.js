@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test')
-import { loginPage } from '../Pages/loginPage';
+const { loginPage } = require('../Pages/loginPage'); 
+const { productsPage } = require ('../Pages/productsPage')
 const loginData = JSON.parse(JSON.stringify(require('../Test-Data/loginData.json')))
-import { productsPage } from '../Pages/productsPage'
 const productData = JSON.parse(JSON.stringify(require('../Test-Data/productsPageData.json')))
 
 test('Products Page', async({page}) => {
