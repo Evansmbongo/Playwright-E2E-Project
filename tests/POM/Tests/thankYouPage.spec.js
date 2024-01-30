@@ -22,5 +22,5 @@ test('Thank You Page', async({page}) => {
     await ProductsPage.navigateToCheckout()
     await CheckoutPage.country(checkOutData.country)
     await CheckoutPage.clickPlaceOrder()
-    ThankYouPage.clickOrders()
+    await ThankYouPage.clickOrders()
 });
