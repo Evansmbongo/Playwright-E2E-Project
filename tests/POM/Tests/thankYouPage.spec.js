@@ -1,8 +1,8 @@
 const {test, expect} = require('@playwright/test')
 const { loginPage } = require('../Pages/loginPage'); 
 const { checkoutPage } = require('../Pages/CheckoutPage');
-const { productsPage } = require ('../Pages/productsPage')
-const { thankYouPage } = require ('../Pages/thankYouPage')
+const { productsPage } = require('../Pages/productsPage')
+const { thankYouPage } = require('../Pages/thankYouPage')
 const checkOutData = JSON.parse(JSON.stringify(require('../Test-Data/checkOutPageData.json')))
 const loginData = JSON.parse(JSON.stringify(require('../Test-Data/loginData.json')))
 const productData = JSON.parse(JSON.stringify(require('../Test-Data/productsPageData.json')))
